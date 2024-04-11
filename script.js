@@ -30,13 +30,13 @@ function appendOperator(operator) {
 function equal() {
     try {
         if (validateInput()) {
-            const result = eval(this.expression);
-            document.getElementById('display').value = result;
-            this.expression = result.toString();
+            const result = eval(expression);
+            document.getElementById('input').value = result;
+            expression = result.toString();
         }
     } catch (error) {
-        document.getElementById('display').value = 'Error';
-        this.expression = '';
+        document.getElementById('input').value = 'Error';
+        expression = '';
     }
 }
 
