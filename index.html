@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div id="errorMsg"></div>
+                <div>
+                    <input type="text" id="input" placeholder="0" readonly>
+                </div>
+                <div class="buttons">
+                    <div>
+                        <button onclick="appendNum('7')" class="button">7</button>
+                        <button onclick="appendNum('8')" class="button">8</button>
+                        <button onclick="appendNum('9')" class="button">9</button>
+                        <button onclick="del()" class="delete">DEL</button>
+                    </div>
+                    <div>
+                        <button onclick="appendNum('4')" class="button">4</button>
+                        <button onclick="appendNum('5')" class="button">5</button>
+                        <button onclick="appendNum('6')" class="button">6</button>
+                        <button onclick="appendOperator('+')" class="operator">+</button>
+                    </div>
+                    <div>
+                        <button onclick="appendNum('1')" class="button">1</button>
+                        <button onclick="appendNum('2')" class="button">2</button>
+                        <button onclick="appendNum('3')" class="button">3</button>
+                        <button onclick="appendOperator('-')" class="operator">-</button>
+                    </div>
+                    <div>
+                        <button onclick="appendOperator('.')" class="operator">.</button>
+                        <button onclick="appendNum('0')" class="button">0</button>
+                        <button onclick="appendOperator('/')" class="operator">/</button>
+                        <button onclick="appendOperator('*')" class="operator">*</button>
+                    </div>
+                    <div>
+                        <button onclick="reset()" class="reset">RESET</button>
+                        <button onclick="equal()" class="equal">=</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
